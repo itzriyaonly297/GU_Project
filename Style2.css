@@ -1,0 +1,919 @@
+@import url('https://fonts.googleapis.com/css2?family=Caramel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caramel&family=Rubik+Vinyl&display=swap');
+:root {
+    --skin-color: red;
+}
+
+.root {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    top: 0%;
+    left: 0%;
+}
+.button {
+    display: flex;
+    height: 39px;
+    width: 130px;
+    background-color: transparent;
+    border-radius: 16px;
+    justify-content: center;
+    margin-left: 30%;
+    align-items: center;
+    border: 1px solid var(--skin-color);
+    margin-top: 6px;
+}
+
+.button a {
+    text-decoration: none;
+    color: var(--skin-color);
+}
+
+.button:hover {
+    display: flex;
+    height: 44px;
+    width: 135px;
+    background-color: rgb(227, 168, 255);
+    border-radius: 16px;
+    justify-content: center;
+    margin-left: 30%;
+    border: none;
+    align-items: center;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++   BACKGROUND / THEMES   ++++++++++++++++++++*/
+.container {
+    background-color: rgb(240, 240, 240);
+    position: fixed;
+    padding-left: 270px;
+    width: 80%;
+    height: 100%;
+    left: 20%;
+    padding: 15px;
+    border-left: 1px solid rgb(194, 194, 194);
+    padding-right: 15px;
+}
+
+.container .Bg_Circlea {
+    position: absolute;
+    background-color: transparent;
+    left: 35%;
+    width: 100px;
+    height: 100px;
+    top: 57%;
+    animation: lightYellow 7s ease-in 1s infinite;
+    border-radius: 50%;
+}
+
+.container .Bg_Circleb {
+    position: absolute;
+    background-color: transparent;
+    left: 71%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 36%;
+    animation: lightAqua 7s ease-in 1s infinite;
+    transition: 2s;
+}
+
+.container .Bg_Circlec {
+    position: absolute;
+    background-color: transparent;
+    left: -14%;
+    width: 94px;
+    height: 90px;
+    animation: lightPink 7s ease-in 1s infinite;
+    transition: 2s;
+    border-radius: 50%;
+    top: 12%;
+}
+
+.container .Bg_Circled {
+    position: absolute;
+    background-color: transparent;
+    left: 25%;
+    width: 104px;
+    height: 50px;
+    animation: lightBlue 7s ease-in 1s infinite;
+    transition: 2s;
+    border-radius: 50%;
+    top: 17%;
+}
+
+.container .Bg_Circlee {
+    position: absolute;
+    background-color: transparent;
+    left: 72%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    animation: lightPurple 7s ease-in 1s infinite;
+    transition: 2s;
+    top: 87%;
+}
+
+.container .Bg_Circlef {
+    position: absolute;
+    background-color: transparent;
+    left: 2%;
+    width: 50px;
+    height: 50px;
+    animation: lightAqua 7s ease-in 1s infinite;
+    transition: 2s;
+    border-radius: 50%;
+    top: 77%;
+}
+
+.DayMode {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #fbff00;
+    right: 5%;
+    top: 5%;
+}
+
+.NightMode {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    background-color: #761cca;
+    right: 5%;
+    top: 5%;
+    align-items: center;
+    border-radius: 50%;
+}
+.theme {
+    background-color: var(--skin-color);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: grid;
+    align-items: center;
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    border: 2px solid #ff168b;
+}
+.theme-content {
+    height: 25px;
+    display: none;
+    width: 200px;
+}
+.theme:hover .theme-content {
+    display: inline-flex;
+}
+.themeI {
+    height: 25px;
+    width: 25px;
+    margin-left: 3%;
+    border-radius: 50%;
+    border: 2px solid var(--skin-color);
+}
+#red {
+    background-color: red;
+    margin-left: 25%;
+}
+#blue {
+    background-color: blue;
+}
+#orange {
+    background-color: rgb(255, 146, 58);
+}
+#green {
+    background-color: #00ff95;
+}
+/*+++++++++++++++++++++++++   ANIMATIONS SECTION   +++++++++++++++++++++*/
+
+@keyframes lightPink {
+    0% {
+        box-shadow: 200px -10px 9em #ff008488;
+    }
+
+    25% {
+        box-shadow: 200px -10px 9em #00ff5588;
+    }
+
+    50% {
+        box-shadow: 200px -10px 10em #ff0000;
+    }
+
+    75% {
+        box-shadow: 200px -10px 9em #0011ff88;
+    }
+
+    100% {
+        box-shadow: 200px -10px 8em #ff00838c;
+    }
+}
+
+@keyframes lightBlue {
+    0% {
+        box-shadow: 238px -10px 7em #0058ff;
+    }
+
+    25% {
+        box-shadow: 238px -10px 7em #d9ff00;
+    }
+
+    50% {
+        box-shadow: 238px -10px 5em #7eabff;
+    }
+
+    75% {
+        box-shadow: 238px -10px 7em #ff0000;
+    }
+
+    100% {
+        box-shadow: 238px -10px 7em #0058ff;
+    }
+}
+
+@keyframes lightYellow {
+    0% {
+        box-shadow: 200px -10px 8em #ff8300ab;
+    }
+
+    25% {
+        box-shadow: 200px -10px 8em #ff00d4ab;
+    }
+
+    50% {
+        box-shadow: 200px -10px 9.5em #d9ff00;
+    }
+
+    75% {
+        box-shadow: 200px -10px 8em #00ff40ab;
+    }
+
+    100% {
+        box-shadow: 200px -10px 8em #ff8300ab;
+    }
+}
+
+@keyframes lightAqua {
+    0% {
+        box-shadow: 137px -10px 5em aqua;
+    }
+
+    25% {
+        box-shadow: 137px -10px 5em rgb(255, 0, 106);
+    }
+
+    50% {
+        box-shadow: 137px -10px 6em rgb(0, 255, 106);
+    }
+
+    75% {
+        box-shadow: 137px -10px 5em rgb(25, 0, 255);
+    }
+
+    100% {
+        box-shadow: 137px -10px 5em aqua;
+    }
+}
+
+@keyframes lightPurple {
+    0% {
+        box-shadow: 137px -10px 7em #9700ff;
+    }
+
+    50% {
+        box-shadow: 137px -10px 8em #c42185;
+    }
+
+    100% {
+        box-shadow: 137px -10px 7em #9700ff;
+    }
+}
+
+@keyframes BottomRightBorder {
+    0% {
+        border-bottom: 2px solid #a200ff;
+        border-right: 2px solid #a200ff;
+    }
+
+    25% {
+        border-bottom: 2px solid #00ff95;
+        border-right: 2px solid #00ff95;
+    }
+
+    50% {
+        border-bottom: 2px solid #ff7b00;
+        border-right: 2px solid #ff7b00;
+    }
+
+    75% {
+        border-bottom: 2px solid #ff168b;
+        border-right: 2px solid #ff168b;
+    }
+
+    100% {
+        border-bottom: 2px solid #a200ff;
+        border-right: 2px solid #a200ff;
+    }
+
+}
+
+@keyframes fullColor {
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: blue;
+    }
+    50% {
+        background-color: #00ff95;
+    }
+    75% {
+        background-color: rgb(255,146,58);
+    }
+    100% {
+        background-color: red;
+    }
+}
+/*+++++++++++++++++++++++++   NAVIGATION BAR SECTION   ++++++++++++++++++++++*/
+
+.navbar {
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+
+}
+
+.navbar .logo {
+    width: 100%;
+    height: 90%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .logo .icon {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: var(--skin-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    overflow: hidden;
+}
+
+.navbar .logo .text {
+    height: 70%;
+    display: flex;
+    color: var(--skin-color);
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    font-size: 4.5vh;
+    font-family: cursive;
+    padding-left: 45px;
+}
+
+.navbar ul {
+    list-style: none;
+    width: 100%;
+    height: 68%;
+    margin: 6px;
+    margin-left: 0px;
+    padding: unset;
+    margin-bottom: 66%;
+}
+
+.navbar ul a {
+    text-decoration: none;
+}
+
+.navbar ul .navItems {
+    height: 15%;
+    width: 90%;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    margin-right: 10%;
+    margin-left: 10%;
+    font-size: 2.6vh;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.navbar ul .navItems:hover {
+    color: var(--skin-color);
+    font-size: 3vh;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++  MAIN CONTENT  ++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+.quote {
+    width: 100%;
+    height: 100%;
+    font-family: 'Rubik Vinyl', cursive;
+    font-size: 11vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+/*+++++++++++++++++++++++++++++++++++++     ABOUT PAGE SECTION  +++++++++++++++++++*/
+.AboutPage {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+.AboutPage .Head {
+    width: 100%;
+    height: 15%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 7vh;
+}
+.AboutPage .Head .onel {
+    width: 90%;
+    height: 3px;
+    background-color: var(--skin-color);
+    margin-top: 10px;
+}
+.AboutPage .Head .twol {
+    width: 60%;
+    height: 3px;
+    background-color: var(--skin-color);
+    margin-top: 5px;
+} 
+.AboutPage .content-container {
+    width: 76%;
+    height: 70%;
+    position: fixed;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    top: 15%;
+}
+.AboutPage .home-info {
+    width: 50%;
+    height: 100%;
+    font-size: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+}
+.AboutPage .home-img {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.AboutPage .home-img .img {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+/*+++++++++++++++++++++++++++++++++++++++   COURSE PAGE SECTION ++++++++++++++++++++++++++*/
+.CourcePage {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.CourcePage .Head {
+    width: 100%;
+    height: 15%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 7vh;
+}
+
+.CourcePage .Head .onel {
+    width: 90%;
+    height: 3px;
+    background-color: var(--skin-color);
+    margin-top: 15px;
+}
+
+.CourcePage .Head .twol {
+    width: 60%;
+    height: 3px;
+    background-color: var(--skin-color);
+}
+
+.CourcePage .content-container {
+    width: 100%;
+    height: 70%;
+    position: fixed;
+    overflow: hidden;
+    top: 15%;
+}
+
+.CourcePage .content-container .Branding {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 5%;
+    top: 15%;
+}
+
+.CourcePage .content-container .Branding .box {
+    height: 60%;
+    width: 50%;
+    justify-content: flex-end;
+    font-size: 3vh;
+    position: absolute;
+    left: 13%;
+    list-style: none;
+    overflow-y: scroll;
+}
+
+.CourcePage .content-container .Traffic {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 105%;
+    top: 15%;
+}
+
+.CourcePage .content-container .Traffic .box {
+    height: 65%;
+    width: 50%;
+    justify-content: flex-end;
+    font-size: 3vh;
+    position: absolute;
+    left: 13%;
+    list-style: none;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.CourcePage .content-container .Influence {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 205%;
+    top: 15%;
+}
+
+.CourcePage .content-container .Influence .box {
+    height: 60%;
+    width: 50%;
+    justify-content: flex-end;
+    font-size: 3vh;
+    position: absolute;
+    left: 13%;
+    list-style: none;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.CourcePage .content-container .Marketing {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 305%;
+    top: 15%;
+}
+
+.CourcePage .content-container .Marketing .box {
+    height: 60%;
+    width: 50%;
+    justify-content: flex-end;
+    font-size: 3vh;
+    position: absolute;
+    left: 13%;
+    list-style: none;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.CourcePage .content-container .Finance {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 405%;
+    top: 15%;
+}
+
+.CourcePage .content-container .Finance .box {
+    height: 60%;
+    width: 50%;
+    justify-content: flex-end;
+    font-size: 3vh;
+    position: absolute;
+    left: 13%;
+    list-style: none;
+    overflow-y: scroll;
+}
+
+.CourcePage .content-nav {
+    width: 25%;
+    height: 10%;
+    background-color: transparent;
+    position: fixed;
+    display: flex;
+    top: 90%;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+}
+
+.CourcePage .content-nav .nav {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    margin-left: 20px;
+    border: 1px solid var(--skin-color);
+}
+
+.CourcePage .content-nav .nav:hover {
+    background-color: var(--skin-color);
+    height: 25px;
+    width: 25px;
+}
+
+/*++++++++++++++++++++++++++++  PERK CONTAINER  ++++++++++++++++++++*/
+
+.PerkContainer {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.PerkContainer .Head {
+    width: 100%;
+    height: 15%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 7vh;
+}
+
+.PerkContainer .Head .onel {
+    width: 90%;
+    height: 3px;
+    background-color: var(--skin-color);
+}
+
+.PerkContainer .Head .twol {
+    width: 60%;
+    height: 3px;
+    background-color: var(--skin-color);
+}
+
+.PerkContainer .content-container {
+    width: 100%;
+    height: 70%;
+    position: fixed;
+    overflow: hidden;
+    top: 20%;
+}
+
+.PerkContainer .content-container .Cources {
+    width: 68%;
+    height: 100%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-size: 3vh;
+    overflow-y: scroll;
+}
+
+.PerkContainer .content-container .Community {
+    width: 68%;
+    height: 100%;
+    position: absolute;
+    top: 5%;
+    left: 105%;
+    font-size: 3vh;
+    overflow-y: scroll;
+}
+
+.PerkContainer .content-container .Rewards {
+    width: 68%;
+    height: 100%;
+    position: absolute;
+    top: 5%;
+    left: 205%;
+    font-size: 3vh;
+    overflow-y: scroll;
+}
+
+.PerkContainer .content-container .Affilate {
+    width: 68%;
+    height: 100%;
+    position: absolute;
+    top: 5%;
+    left: 305%;
+    font-size: 3vh;
+    overflow-y: scroll;
+}
+
+.PerkContainer .perks-nav {
+    width: 25%;
+    height: 10%;
+    background-color: transparent;
+    position: fixed;
+    display: flex;
+    top: 90%;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+.PerkContainer .perks-nav .nav {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    margin-left: 20px;
+    border: 1px solid var(--skin-color);
+}
+
+.PerkContainer .perks-nav .nav:hover {
+    background-color: var(--skin-color);
+    height: 25px;
+    width: 25px;
+}
+
+/*++++++++++++++++++++++++++++  CONTACT US ++++++++++++++++++++*/
+
+.Contactme {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.Contactme .Head {
+    width: 100%;
+    height: 15%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 7vh;
+}
+
+.Contactme .Head .onel {
+    width: 90%;
+    height: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: var(--skin-color);
+}
+
+.Contactme .Head .twol {
+    width: 60%;
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: var(--skin-color);
+}
+
+.Contactme .body {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+
+.Contactme .perinfo-contain {
+    width: 50%;
+    height: 100%;
+    min-width: 250px;
+}
+
+.Contactme .formCont {
+    width: 50%;
+    height: 100%;
+    min-width: 250px;
+}
+
+.Contactme .perinfo-contain .message {
+    width: 100%;
+    height: 30%;
+}
+
+.Contactme .perinfo-contain .message {
+    width: 80%;
+    height: 15%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.5vh;
+}
+
+.Contactme .perinfo-contain .info {
+    width: 85%;
+    height: 70%;
+    margin-top: 5%;
+    overflow-y: scroll;
+}
+
+.Contactme .perinfo-contain .info .data {
+    height: 15%;
+    margin-bottom: 15px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 3vh;
+    border-bottom: 1px solid rgb(202, 201, 201);
+}
+
+.Contactme .formCont .message {
+    width: 100%;
+    height: 30%;
+}
+
+.Contactme .formCont .message {
+    width: 85%;
+    height: 15%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.5vh;
+    left: 5%;
+}
+
+.Contactme .body .formCont .form {
+    width: 85%;
+    height: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: transparent;
+    padding-left: 5px;
+    overflow-y: scroll;
+}
+
+.Contactme .body .formCont .form input {
+    width: 100%;
+    height: 6%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    animation: BottomRightBorder 9s infinite;
+    margin-top: 5px;
+}
+
+.Contactme .body .formCont .form textarea {
+    width: 100%;
+    height: 30%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    animation: BottomRightBorder 9s infinite;
+    margin-top: 5px;
+}
+
+.Contactme .body .formCont .form button {
+    display: flex;
+    height: 39px;
+    width: 130px;
+    background-color: rgb(255, 167, 167);
+    border-radius: 16px;
+    justify-content: center;
+    margin-left: 30%;
+    align-items: center;
+    border: 1px solid var(--skin-color);
+    margin-top: 6px;
+}
+
+.Contactme .body .formCont .form button:hover {
+    display: flex;
+    height: 39px;
+    width: 130px;
+    background-color: rgb(227, 168, 255);
+    border-radius: 16px;
+    justify-content: center;
+    margin-left: 30%;
+    border: none;
+    align-items: center;
+}
